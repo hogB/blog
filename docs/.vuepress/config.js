@@ -2,6 +2,7 @@ module.exports = {
   title: '猪痞恶霸的blog',
   description: '前端小学生的学习笔记',
   base: '/hogskin-blog/',
+  theme: 'reco',
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -14,7 +15,7 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: '关于我的',
+        title: '关于博客',
         path: '/',
         collapsable: false, // 不折叠
       },
