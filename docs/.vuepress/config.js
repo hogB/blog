@@ -1,5 +1,11 @@
 const { getChildren } = require('./utils/autoSidebar')
 const hogskin = (e) => getChildren('./docs', e)
+const sidebar = hogskin('notebooks')
+sidebar.unshift(...[{
+  title: '关于博客',
+  path: '/',
+  collapsable: false, // 不折叠
+}])
 module.exports = {
   title: '猪痞恶霸的blog',
   description: '前端小学生的学习笔记',
@@ -15,13 +21,13 @@ module.exports = {
         ]
       }
     ],
-    sidebar: hogskin('notebooks'),
+    sidebar
     // sidebar: [
-    //   {
-    //     title: '关于博客',
-    //     path: '/',
-    //     collapsable: false, // 不折叠
-    //   },
+    // {
+    //   title: '关于博客',
+    //   path: '/',
+    //   collapsable: false, // 不折叠
+    // },
     //   {
     //     title: "基础学习",
     //     path: '/notebooks/frontendbase/02-选择器',
