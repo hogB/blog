@@ -1,6 +1,12 @@
 ---
 title: 猪痞恶霸的Blog
 lang: en-US
+modules: # 指定首页展示模块
+  - Banner 
+banner: # banner 模块的配置
+  heroText: 午后南杂
+  tagline: Enjoy when you can, and endure when you must.
+  heroImage: ./.vuepress/public/back.png 
 ---
 
 ### 个人介绍
